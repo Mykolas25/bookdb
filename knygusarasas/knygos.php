@@ -8,6 +8,6 @@ $sql = "SELECT * FROM `knygos` WHERE tableId = $pk";
 $result = mysqli_query($db, $sql) or die (mysqli_error());
 			
 while ($row = mysqli_fetch_array($result)){
-	include "knygusarasas.phtml";
+	include "knyguinfo.phtml";
 };
 ?>
