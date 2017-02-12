@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<title>Apie knygą</title>
+	<head>
+		<link type="text/css" rel="stylesheet" href="style.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<main>
+			<header>
+				<div id = "mainHeader"><h1>Mažoji knygų enciklopedija</h1></div>
+			</header>
+			
+			<h4>Knygos pavadinimas</h4>
+			<div class="knyga">
+				<p> <?php echo $row["pavadinimas"]; ?></p>
+			</div class="knyga">
+			
+			<h4>Leidimo metai</h4>
+			<div class="knyga">
+				<p> <?php echo $row["leidimo_metai"]; ?> </p>
+			</div>
+			
+			<h4>Autorius</h4>
+			<div class="knyga">
+				<p> <?php echo $row["autorius"]; ?> </p>
+			</div class="knyga">
+			
+			<h4>Žanras</h4>
+			<div class="knyga">
+				<p> <?php echo $row["zanras"]; ?> </p>
+			</div>
+		</main>
+	</body>
+</html>

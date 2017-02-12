@@ -1,0 +1,33 @@
+.knyga {
+	border: solid black 1px;
+	margin: 5px;
+	padding: 2px;
+	background-color:#ebfaeb;
+	text-align: center;
+}
+body {
+
+}
+h4 {
+margin-left:20px;
+margin-bottom:-4px;
+background-color: white;
+width:150px;
+border: solid black 1px;
+padding: 1px;
+}
+main {
+	margin: auto;
+	width: 1000px;
+	background-color:#EBF5FB;
+	border: solid #76448A 3px;
+}
+
+#mainHeader {
+	border: black solid 1px;
+	width: 100%;
+	height: 70px;
+	background-color: #ADC8FA;
+	text-align:center;
+	
+}
