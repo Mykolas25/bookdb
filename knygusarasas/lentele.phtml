@@ -22,12 +22,12 @@
 			</tfoot>
 			<tbody>
 <?php
-			while ($row=mysqli_fetch_array($result))  {
-					$masyvukas = sprintf('<a href = "knygos.php?pk=%s">%s<a>',$row[0],$row[1]);
+			while ($row = mysqli_fetch_array($result))  {
+					$link = sprintf('<a href = "knygos.php?pk=%s">%s<a>',$row[0],$row[1]);
 ?>
 			<tr>
-				<td><?php echo $row[0];   ?></td>
-				<td><?php echo $masyvukas ?></td>
+				<td><?php echo $row[0]; ?></td>
+				<td><?php echo $link;   ?></td>
 			</tr>		
 <?php					
 				};
@@ -37,6 +37,7 @@
 	</body>
 </html>
 
+<script type="text/javascript"></script>
 <script>
 $(document).ready(function() {
     $('#example').DataTable( {
