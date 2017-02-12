@@ -7,12 +7,12 @@
 }
 
 h4 {
-	margin-left:20px;
-	margin-bottom:-4px;
-	background-color: white;
-	width:150px;
-	border: solid black 1px;
-	padding: 1px;
+margin-left:20px;
+margin-bottom:-4px;
+background-color: white;
+width:150px;
+border: solid black 1px;
+padding: 1px;
 }
 
 main {
@@ -22,10 +22,15 @@ main {
 	border: solid #76448A 3px;
 }
 
-#mainHeader {
+#mainHeader, #mainHeader1 {
 	border: black solid 1px;
 	width: 100%;
 	height: 70px;
 	background-color: #ADC8FA;
 	text-align:center;
+}
+
+#mainHeader1 {
+	background-color: #d1e8b2;
+	margin-bottom: 10px;
 }
