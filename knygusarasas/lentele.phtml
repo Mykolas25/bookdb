@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html>
-	<title>Apie knygą</title>
+<html>	
+	<title>Knygų sąrašas</title>
 	<head>
+		<link type="text/css" rel="stylesheet" href="style.css"/>
 		<script src="http://code.jquery.com/jquery-1.12.4.js"></script>
 		<script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
 		<link href='https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css' rel='stylesheet' type='text/css'>
+		<meta charset="UTF-8">
 	</head>
 	<body>
+		<header>
+			<div id = "mainHeader1"><h1>Mažasis knygų sąrašas</h1></div>
+		</header>
 		<table id="example" class="display" cellspacing="0" width="100%">
 			<thead>
 				<tr>
@@ -14,20 +19,14 @@
 					<th> Knygos pavadinimas</th>
 				</tr>
 			</thead>
-			<tfoot>
-				<tr>
-					<th> Numeris</th>
-					<th> Knygos pavadinimas</th>
-				</tr>
-			</tfoot>
 			<tbody>
 <?php
-			while ($row = mysqli_fetch_array($result))  {
-					$link = sprintf('<a href = "knygos.php?pk=%s">%s<a>',$row[0],$row[1]);
+			while ($row=mysqli_fetch_array($result))  {
+				$link = sprintf('<a href = "knygos.php?pk=%s">%s<a>',$row[0],$row[1]);
 ?>
 			<tr>
 				<td><?php echo $row[0]; ?></td>
-				<td><?php echo $link;   ?></td>
+				<td><?php echo $link    ?></td>
 			</tr>		
 <?php					
 				};
