@@ -1,7 +1,6 @@
 <?php
-
 if(isset($_GET["pk"])) {
-$pk = $_GET["pk"];
+	$pk = $_GET["pk"];
 };
 
 $db = mysqli_connect("localhost", "root", "", "knygu_sarasas") or die(mysqli_error());
